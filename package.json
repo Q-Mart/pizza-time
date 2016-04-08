@@ -1,0 +1,25 @@
+{
+  "name": "pizza-time",
+  "version": "0.0.0",
+  "description": "Countdown timer made specifically for pizza",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Q-Mart/pizza-time.git"
+  },
+  "keywords": [
+    "pizza",
+    "time"
+  ],
+  "author": "Qumarth Jash",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Q-Mart/pizza-time/issues"
+  },
+  "dependencies": {
+    "angular": "~1.5.3"
+  }
+}

@@ -8,10 +8,12 @@
 <body>
   <div id="container" ng-controller="mainCtrl">
     <h2>Pizza in:</h2>
-    <h1>{{ timeUntilPizza }}</h1>
+    <h1>{{ message | date:"HH:mm:ss" }}</h1>
+
+    <input type="datetime-local" ng-model="arrivalDateTime"/>
+    <button ng-click="setArrival()">Submit</button>
   </div>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
