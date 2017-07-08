@@ -1,0 +1,24 @@
+html,body {
+  height: 99%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Verdana";
+}
+
+#container {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  border: 3px solid green;
+}
+
+#title {
+  height: 33%;
+}
+
+#countdown {
+  color:blue;
+  height: 33%;
+  font-size: 50px;
+}

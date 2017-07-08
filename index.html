@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Pizza Time</title>
-  <title></title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
   <div id="container" ng-controller="mainCtrl">
-    <h2>Pizza in:</h2>
-    <h1>{{ message | date:"HH:mm:ss" }}</h1>
+    <div id="title">
+      <h2>Pizza in:</h2>
+    </div>
 
-    <input type="datetime-local" ng-model="arrivalDateTime"/>
-    <button ng-click="setArrival()">Submit</button>
+    <div id="countdown">
+      <h1>{{ message | date:"HH:mm:ss" }}</h1>
+    </div>
+
+    <div id="input">
+      <input type="datetime-local" ng-model="arrivalDateTime"/>
+      <button ng-click="setArrival()">Submit</button>
+    </div>
   </div>
   
-  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -5,7 +5,11 @@ app.controller('mainCtrl', function($scope, $interval){
   var isCountdownNotAtZero = true;
   var timeUntilPizza;
 
-  $scope.message = 'Please choose a time';
+  $scope.message = '00:00:00';
+
+  var defaultArrival = new Date();
+  defaultArrival.setTime(defaultArrival.getTime() + 60*60*1000);
+  $scope.arrivalDateTime = defaultArrival;
 
   var tick = function() {
     if (isDateTimeSet && isCountdownNotAtZero) {
